@@ -4,4 +4,6 @@
 
 - Relationships between entities
     - OneToOne : 
-    - 
+    - ManyToOne
+    -ManyToMany
+    -JoinTable

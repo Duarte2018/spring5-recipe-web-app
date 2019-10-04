@@ -1,6 +1,7 @@
 package guru.springframework.spring5recipeapp.model;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Notes {
@@ -38,4 +39,5 @@ public class Notes {
     public void setRecipeNotes(String recipeNotes) {
         this.recipeNotes = recipeNotes;
     }
+
 }
