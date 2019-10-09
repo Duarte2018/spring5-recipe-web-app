@@ -13,3 +13,5 @@
     - DML -> Data Manipulation Language
     - property: spring.jpa.hibernate.ddl-auto
     - Spring datasource initializer: data.sql file
+    - bootstrapper class with recipe data
+ - Recipe display with thymeleaf template
