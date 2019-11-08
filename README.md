@@ -16,4 +16,10 @@
     - bootstrapper class with recipe data
  - Recipe display with thymeleaf template
  
- -Project Lombok branch
+ - Project Lombok branch
+ - Added Bootstrap css
+ - Spring Boot Test
+    - J-Unit tests
+    - MockMVC tests
+    - Integration tests
+    - maven failsafe plugin configuration to run integration tests
