@@ -124,7 +124,9 @@ public class RecipeBootStrap implements ApplicationListener<ContextRefreshedEven
                 "\n");
         guacNotes.setRecipe(guacRecipe);
         guacRecipe.setNotes(guacNotes);
-        guacRecipe.setUrl("http://www.simplyrecipes.com/recipes/perfect_guacamole/#ixzz4jvoun5ws");
+        guacRecipe.setUrl("http://www.simplyrecipes.com/recipes/perfect_guacamole/");
+        guacRecipe.setServings(4);
+        guacRecipe.setSource("Simply recipes");
 
         //very redundant - could add helper method, and make this simpler
         guacRecipe.addIngredient(new Ingredient("ripe avocados", new BigDecimal("2"), eachUnit, guacRecipe));
@@ -161,7 +163,7 @@ public class RecipeBootStrap implements ApplicationListener<ContextRefreshedEven
                 "5 Assemble the tacos: Slice the chicken into strips. On each tortilla, place a small handful of arugula. Top with chicken slices, sliced avocado, radishes, tomatoes, and onion slices. Drizzle with the thinned sour cream. Serve with lime wedges.\n" +
                 "\n" +
                 "\n" +
-                "Read more: http://www.simplyrecipes.com/recipes/spicy_grilled_chicken_tacos/#ixzz4jvtrAnNm");
+                "Read more: http://www.simplyrecipes.com/recipes/spicy_grilled_chicken_tacos/");
 
         Notes tacoNotes = new Notes();
         tacoNotes.setRecipeNotes("We have a family motto and it is this: Everything goes better in a tortilla.\n" +
@@ -174,6 +176,8 @@ public class RecipeBootStrap implements ApplicationListener<ContextRefreshedEven
         //needed for bidirectional - should be one method call
         tacoNotes.setRecipe(tacosRecipe);
         tacosRecipe.setNotes(tacoNotes);
+        tacosRecipe.setServings(4);
+        tacosRecipe.setSource("Simply recipes");
         tacosRecipe.setUrl("http://www.simplyrecipes.com/recipes/spicy_grilled_chicken_tacos/#ixzz4jvu7Q0MJ");
 
         tacosRecipe.addIngredient(new Ingredient("Nacho Chili Powder", new BigDecimal(2), tablespoonUnit, tacosRecipe));
