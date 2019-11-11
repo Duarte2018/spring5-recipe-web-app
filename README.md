@@ -23,3 +23,5 @@
     - MockMVC tests
     - Integration tests
     - maven failsafe plugin configuration to run integration tests
+    
+ - Created added the command classes and tests for command classes
