@@ -78,7 +78,7 @@
                             <div class="col-md-3">
                                 <h5>URL:</h5>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <a th:href="${recipe.getUrl()}" th:text="${recipe.getUrl()}">http://www.example.com</a>
                             </div>
                         </div>
@@ -86,7 +86,12 @@
                 </div>
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        <h1 class="panel-title" >Ingredients</h1>
+                        <div class="row">
+                            <h1 class="col-md-10" >Ingredients</h1>
+                            <div class="col-md-1">
+                                <a class="btn btn-default" href="#" th:href="@{'/recipe/' + ${recipe.id} + '/ingredients'}" role="button">View</a>
+                            </div>
+                        </div>
                     </div>
                     <div class="panel-body">
                         <div class="row">
