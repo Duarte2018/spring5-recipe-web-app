@@ -56,7 +56,7 @@ public class ImageControllerTest {
         MockMultipartFile multipartFile = new MockMultipartFile("imagefile", "testing.txt", "text/plain", "save Image test".getBytes());
 
         this.mockMvc.perform(multipart("/recipe/1/image").file(multipartFile))
-                .andExpect(status().isOk());
+                .andExpect(status().is3xxRedirection());
         verify(imageService, times(1)).saveImageFile(anyLong(),any());
     }
 
