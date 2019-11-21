@@ -28,4 +28,4 @@
  - CRUD operations: POST recipe, update recipe, delete recipe
  - View ingredients
  - Save and display images from DB
- - Exception handling
+ - Exception handling (exception class and handler)
